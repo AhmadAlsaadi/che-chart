@@ -1,0 +1,148 @@
+p{
+margin:0px;
+padding:0px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    column-gap:20px;
+   
+
+
+}
+.semester{
+    /*border: 1px solid #222;*/
+    text-align: center;
+}
+
+
+.course-grid{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    border: 1px solid;
+    margin:15px 0px;
+    
+}
+.course-code{
+    grid-column:2/5;
+}
+.Seme>.course-code{
+    grid-column: 1/6;
+   
+}
+
+.course-title{
+    grid-column: 1/6;
+    padding:15px 0px;
+}
+.course-credit{
+    grid-column: 5/6;
+}
+.course-pre{
+    grid-column: 3/6;
+    display:grid;
+    grid-template-columns: repeat(3,25px);
+    grid-template-rows: repeat(1,25px);
+    column-gap: 5px;
+}
+header{
+    background-color: teal;
+    color:white;
+    text-align: center;
+    padding: 5px;
+    margin: 5px 0px 25px 0px;
+}
+.ENCH>.course-no  {
+    background-color: teal;
+    color: white;
+    border: 1px solid black;
+}
+.ENME>.course-no {
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+}
+.ENIE>.course-no {
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+}
+.islm {
+    background-color: darkviolet;
+    color: white;
+    border: 1px solid black;
+}
+.free {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+.ENEE>.course-no {
+    background-color: darkolivegreen;
+    color: white;
+    border: 1px solid black;
+}
+.SCCH>.course-no {
+    background-color: yellow;
+    color: black;
+    border: 1px solid black;
+}
+.SCMT>.course-no {
+    background-color: orange;
+    color: black;
+    border: 1px solid black;
+}
+.SCPH>.course-no {
+    background-color: lightpink;
+    color: black;
+    border: 1px solid black;
+}
+.EDAR> .course-no {
+    background-color: lightblue;
+    color: black;
+    border: 1px solid black;
+}
+.ENCI>.course-no {
+    background-color: darkslateblue;
+    color: white;
+    border: 1px solid black;
+}
+.eipr {
+    background-color: darkblue;
+    color: white;
+    border: 1px solid black;
+}
+.ccit {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    border: 1px solid black;
+}
+
+h2 {
+    margin-block-start: 3px;
+    margin-block-end: 3px;
+    
+}
+
+
+circle:hover{
+    stroke-width: 2px;
+    cursor: pointer;
+}
+text:hover{
+    cursor: pointer;
+}
+.ENWS{
+    background-color: lightblue;
+    color: black;
+    border: 1px solid black;
+}
+
+.required{
+    background:green;
+    border-radius:12.5px;
+    color:white;
+    margin:2px;
+    text-align: center;
+}
