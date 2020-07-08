@@ -1,3 +1,5 @@
+d3.select("header").attr("class",department).append("div").attr("class","course-no").append("h1").text(program)
+
 var preReq=[];
 curr.forEach(function(d){
 	d.courses.forEach(function(p){

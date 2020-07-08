@@ -58,6 +58,11 @@ var allcourses={
         SCCH211:["2","SCCH-211","1","General Chemistry Lab","F",[1]],
         SCCH213:["3","SCCH-213","4","General Chemistry II","F",[1]],
         SCCH215:["4","SCCH-215","4","Organic Chemistry","F",[1]],            
+        SCCH225:["5","SCCH-225","4","Water Chemistry","F",[1]],            
+        },
+    SCBI:{
+        SCBI101:["2","SCBI-211","1","Intro. to Biology","F",[1]],
+        SCBI211:["2","SCBI-211","1","Micro. Biology","F",[1]],
         },
     SCPH:{
         SCPH101:["1","SCPH-101","4","General Physics I","F",[1]],
@@ -70,6 +75,7 @@ var allcourses={
         },
     ENCI:{
         ENCI101:["1","ENCI-101","2","Eng. Mechanics Statics","F",[1]],          
+        ENCI201:["1","ENCI-201","2","Intro. to Hydrology","F",[1]],          
         },
     EIPR:{
         EIPR102:["1","EIPR-102","2","English Language II","F",[1]],
@@ -86,9 +92,10 @@ var allcourses={
         SCMT223:["6","SCMT-223","3","Series & Vect. Calc.","F",[1]],            
         },
     ENWS:{
-        ENWS201:["1","ENWS-201","3","Introduction to water treatment","F",[1]],
-        ENWS301:["2","ENWS-301","3","Thermal Desalination Technologies","F",[1]],
-        ENWS302:["3","ENWS-302","3","Calculus III","S",[1]],
+        ENWS201:["1","ENWS-201","3","Intro. to Sust. Eng.","F",[1]],
+        ENWS301:["3","ENWS-301","3","Water Treatment system","S",[1]],
+        ENWS302:["2","ENWS-302","3","Thermal Desalination Tech.","F",[1]],
+        ENWS303:["2","ENWS-303","3","Wastewater treat. sys.","F",[1]],
         ENWS402:["4","ENWS-401","3","Reverse Osmosis","F",[1]],            
         ENWS403:["5","ENWS-402","3","Emerging desalination Technlogies","F",[1]],            
         ENWS411:["6","ENWS-411","3","Water Management and Field Investigations","F",[1]],            
@@ -102,89 +109,4 @@ var allcourses={
 }; 
 
 const course_tags=["course-no","course-code","course-credit","course-title","course-offer","course-pre"]
-const curr=[
- 
-    {name:"semester1", courses:[
-        {name:["","Semester I"]},
-        {name:allcourses.ENIE.ENIE100,pre:[allcourses.ENCH.ENCH110]},
-        {name:allcourses.EDAR.EDAR101,pre:[]},
-        {name:allcourses.SCMT.SCMT211,pre:[allcourses.SCMT.SCMT101]},
-        {name:allcourses.SCPH.SCPH211,pre:[allcourses.SCPH.SCPH101,allcourses.SCMT.SCMT101]},
-        {name:allcourses.SCPH.SCPH214,pre:[allcourses.SCPH.SCPH101]},
-        {name:allcourses.SCCH.SCCH211,pre:[allcourses.SCCH.SCCH101]},
-       
-    ]},
-    {name:"semester2", courses:[
-        {name:["","Semester II"]},
-        {name:allcourses.ENIE.ENIE255,pre:[allcourses.SCMT.SCMT101]},
-        {name:allcourses.SCMT.SCMT212,pre:[allcourses.SCMT.SCMT101]},
-        {name:allcourses.ENCI.ENCI101,pre:[allcourses.SCPH.SCPH214]},
-        {name:allcourses.ENME.ENME102
-            ,pre:[allcourses.ENCH.ENCH110]},
-        {name:allcourses.ENCH.ENCH110,pre:[allcourses.SCCH.SCCH211]},
-        {name:allcourses.ENEE.ENEE101,pre:[allcourses.SCMT.SCMT101]},
-        {name:allcourses.ENIE.ENIE202,pre:[allcourses.ENIE.ENIE100]},
-    ]},
-    {name:"semester3", courses:[
-        {name:["","Semester III"]},
-        {name:allcourses.ENCH.ENCH201,pre:[allcourses.SCCH.SCCH101]},
-        {name:allcourses.SCCH.SCCH213,pre:[allcourses.SCCH.SCCH101]},
-        {name:allcourses.SCMT.SCMT221,pre:[allcourses.SCMT.SCMT211]},
-        {name:allcourses.SCMT.SCMT222,pre:[allcourses.SCMT.SCMT211]},
-        {name:allcourses.EDAR.EDAR202,pre:[allcourses.EDAR.EDAR101]},
-        
-    ]},
-    {name:"semester4", courses:[
-        {name:["","Semester IV"]},
-        {name:allcourses.ENCH.ENCH204,pre:[allcourses.ENCH.ENCH201,allcourses.SCMT.SCMT222]},
-        {name:allcourses.ENCH.ENCH202,pre:[allcourses.ENCH.ENCH201]},
-        {name:allcourses.ENME.ENME203,pre:[allcourses.ENCI.ENCI101]},
-        {name:allcourses.SCMT.SCMT223,pre:[allcourses.SCMT.SCMT211,allcourses.SCMT.SCMT212]},
-        {name:allcourses.ENIE.ENIE231,pre:[allcourses.SCMT.SCMT211]},
-        {name:allcourses.ISLM.ISLM201,pre:[]},
-        {name:allcourses.ENIE.ENIE203,pre:[allcourses.ENIE.ENIE100]},
-    ]},
-    {name:"semester5", courses:[
-        {name:["","Semester V"]},
-        {name:allcourses.ENCH.ENCH302,pre:[allcourses.ENCH.ENCH202]},
-        {name:allcourses.ENCH.ENCH305,pre:[allcourses.ENCH.ENCH204]},
-        {name:allcourses.ENCH.ENCH306,pre:[allcourses.ENCH.ENCH204,allcourses.ENCH.ENCH305]},
-        {name:allcourses.ENCH.ENCH341,pre:[allcourses.ENCH.ENCH201,allcourses.ENCH.ENCH306]},
-        {name:allcourses.ISLM.ISLM202,pre:[allcourses.ISLM.ISLM201]},
-        {name:allcourses.SCCH.SCCH215,pre:[allcourses.SCCH.SCCH213]},
-    ]},
-    {name:"semester6",courses:[
-        {name:["","Semester VI"]},
-        {name:allcourses.ENCH.ENCH350, pre:[allcourses.ENCH.ENCH201,allcourses.SCMT.SCMT222]},
-        {name:allcourses.ENCH.ENCH330, pre:[allcourses.ENCH.ENCH302,allcourses.ENCH.ENCH306]},
-        {name:allcourses.ENCH.ENCH342, pre:[allcourses.ENCH.ENCH341]},
-        {name:allcourses.ENCH.ENCH325, pre:[allcourses.ENCH.ENCH201]},
-        {name:allcourses.ENCH.ENCH320,pre:[allcourses.ENEE.ENEE101,allcourses.SCMT.SCMT222]},
-        {name:allcourses.ENEE.ENEE305, pre:[allcourses.SCPH.SCPH211]},
-        {name:allcourses.XXXX.XXXXI,pre:[]}
-    ]},
-    
-    {name:"semester7", courses:[
-        {name:["","Summer"]},
-        {name:allcourses.ENCH.ENCH390,pre:[]},
-    ]},
-    
-    {name:"semester7", courses:[
-        {name:["","Semester VII"]},
-        {name:allcourses.ENCH.ENCH421,pre:[allcourses.ENCH.ENCH350,allcourses.ENCH.ENCH330]},
-        {name:allcourses.ENCH.ENCH420, pre:[allcourses.ENCH.ENCH330,allcourses.ENCH.ENCH325]},
-        {name:allcourses.ENCH.ENCH499,pre:[]},
-        {name:allcourses.ENCH.ENCHX,pre:[]},
-        {name:allcourses.ISLM.ISLM303, pre:[allcourses.ISLM.ISLM202]},
-        {name:allcourses.ENCH.ENCH390,pre:[]}
-    ]},
-    {name:"semester8",courses:[
-        {name:["","Semester VIII"]},
-        {name:allcourses.ENCH.ENCH422,pre:[allcourses.ENCH.ENCH330,allcourses.ENCH.ENCH420]},
-        {name:allcourses.ENCH.ENCH426,pre:[allcourses.ENCH.ENCH420]},
-        {name:allcourses.ENCH.ENCHXX,pre:[]},
-        {name:allcourses.ENCH.ENCHXXX,pre:[]},
-        {name:allcourses.XXXX.XXXXII,pre:[]}
-        ]},
-   
-]
+

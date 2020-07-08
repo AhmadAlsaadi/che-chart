@@ -47,29 +47,25 @@ line-height:25px;
 }
 
 header{
-    background-color: teal;
-    color:white;
     text-align: center;
-    padding: 5px;
-    margin: 5px 0px 25px 0px;
 }
 .course-pre>.ENCH,
 .ENCH>.course-no  {
-    background-color: teal;
+    background-color: #804000;
     color: white;
     border: 1px solid black;
 }
 .course-pre>.ENME,
 .ENME>.course-no {
-    background-color: blue;
+    background-color:rgb(4, 77, 149);
     color: white;
     border: 1px solid black;
 }
 .course-pre>.ENIE,
 .ENIE>.course-no {
-    background-color: red;
+    background-color:#960303;
     color: white;
-    border: 1px solid black;
+    border: 1px solid rgb(78, 4, 4);
 }
 .course-pre>.ISLM,
 .ISLM>.course-no {
@@ -143,9 +139,11 @@ h2 {
 text:hover{
     cursor: pointer;
 }
-.ENWS{
-    background-color: lightblue;
-    color: black;
+.course-pre>.ENWS,
+.ENWS>.course-no
+{
+    background-color: teal;
+    color: white;
     border: 1px solid black;
 }
 
